@@ -6,3 +6,10 @@ def begins_with_r(array)
   end
   flag
 end
+def contain_a(array)
+  container = []
+  array.each do |element|
+    container << element if element.include?("a")
+  end
+  container
+end
